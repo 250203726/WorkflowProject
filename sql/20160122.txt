@@ -1,0 +1,12 @@
+create table tb_mychecklist(
+problemid int  not NULL AUTO_INCREMENT,
+problemgroupid int,
+problemgroupname VARCHAR(50),
+problemdescribe VARCHAR(200),
+problempriority int,#优先级
+problemkindid int ,#问题类型id
+problemkindname VARCHAR(20),#问题类型name
+reasons text,
+solution text,
+PRIMARY KEY (problemid)
+)
